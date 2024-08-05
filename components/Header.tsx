@@ -1,14 +1,13 @@
 interface Props {
-  type: string;
   query: string;
   category: string;
 }
 
-const Header = ({ type, query, category }: Props) => {
+const Header = ({ query, category }: Props) => {
   if (query && category) {
     return (
       <h1 className="heading3 self-start text-white-800">
-        Search results for "{query}" in {type}{" "}
+        Search results for "{query}" in{" "}
         <span className="capitalize">{category}</span>
       </h1>
     );
